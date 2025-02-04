@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<!-- Guilherme Caixeta-0019429 \ Vinícius Lopes-0018718  -->
+
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Formulário</title>
+  
+</head>
+
+<!-- Cores do Front End utilizando CSS -->
+   <style>
+       body {
+            background: linear-gradient( #5C5C5C, #000000 );;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h1 {
+            color: #000000;
+            
+            
+        }
+        
+        h4 {
+            color: #000000;
+        }
+
+        .form-group label {
+            color: #000000;
+        }
+
+        .form-control {
+            background-color: #f8f9fa;
+            color: #495057;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+    
+ <!-- Código abaixo em HTML -->   
+  <body>
+ <div class="container mt-5">
+    <h1 class="text-center">FORMULÁRIO</h1>
+    <h4 class="text-center">FAÇA SEU CADASTRO ABAIXO</h4> 
+    <form action="processaFormulario" method="post">
+    
+   <div class="form-group">
+    <label for="Name">Nome Completo:</label>
+    <input type="text" class="form-control" id="Name" name = "Name" placeholder="Nome completo" required>
+  </div>
+   <div class="form-group">
+    <label for="Email">Endereço de email:</label>
+    <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" name = "Email" required placeholder="Seu email" required>
+    <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+  </div>
+  <div class="form-group">
+    <label for="Senha">Senha:</label>
+    <input type="password" class="form-control" id="Senha" name = "Senha" required placeholder="Senha" required>
+  </div>
+   <div class="form-group">
+    <label for="Data">Data de nascimento:</label>
+    <input type="date" class="form-control" id="Data" name = "Data" required placeholder="data" required>
+  </div>
+   <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label"> Selecione o seu Gênero:</label>
+    </div>
+	<div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Masculino" checked>
+          <label class="form-check-label" for="gridRadios1" required>
+            Masculino
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Feminino">
+          <label class="form-check-label" for="gridRadios2" required>
+            Feminino
+          </label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Prefiro não dizer">
+          <label class="form-check-label" for="gridRadios2" required>
+           Prefiro não dizer
+          </label>
+        </div>
+<br>
+ <div class="form-group"> 
+    <label for="Endereco">Endereço:</label>
+    <input type="text" class="form-control" id="Endereco" name = "Endereco" required placeholder="Rua 0, nº 0" required>
+  </div>
+  <div class="form-group">
+    <label for="Endereco2">Endereço 2</label>
+    <input type="text" class="form-control" id="Endereco2" name = "Endereco2" required placeholder="Apartamento, hotel, casa, etc." required>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="Cidade">Cidade</label>
+      <input type="text" class="form-control" id="Cidade" name = "Cidade" required>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="Estado">Estado</label>
+      <select id="Estado" class="form-control" name = "Estado" required>
+        <option selected>Escolher...</option>
+        <option>GO</option>
+        <option>SP</option>
+        <option>DF</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="CEP">CEP</label>
+      <input type="text" class="form-control" id="CEP" name = "CEP" required>
+    </div>
+  </div>
+  <label for="Telefone">Telefone</label>
+<input type="tel" id="Telefone" class="input-padrao" name = "Telefone" required placeholder="(xx) xxxxx-xxxx">
+ <br> <br>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
